@@ -1,0 +1,46 @@
+n ary trees means n is the degree of trees
+
+every node can have 0..n children nodes
+
+degree of a tree is pre-decided can not be judged by seeing the tree
+
+strict m-ary trees
+means every node should have degree either 0 or m
+
+// Q. if height is h 
+    // min nodes required is : m*h+1
+    // max nodes are : 2^0+2^1+2^2+.....2^h = ( ( m^(h+1) ) - 1)/(m-1)
+    
+    //Q.if no of nodes are : n
+    // min height = logh( n*(m-1) + 1) - 1
+    // max height = (n-1)/m
+
+
+no of external nodes = e
+no of internal nodes = i
+with a m-ary tree
+
+e=(m-1)*i + 1
+
+
+
+Lets consider the tree : 
+
+
+                        A
+                    B       C    
+                D      E,F     G
+
+
+index is horizontally increasing level by level
+
+Array : A,B,C,D,E,F,G
+ 
+if index of array starts from 0
+left child is 2*i+1
+right child is 2*i+2
+parent is (i-1)/2
+
+for an index i
+
+
